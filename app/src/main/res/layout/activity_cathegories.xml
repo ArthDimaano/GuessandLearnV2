@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "#FFC7C7"
+    tools:context=".cathegories">
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#F8D49D"
+        android:text="Back"
+        android:textColor="#D35D6E"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="38dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Languages"
+        android:textColor="#D9598C"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_back"
+        app:layout_constraintVertical_bias="0.324" />
+
+    <Button
+        android:id="@+id/button_english"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#B9F3FC"
+        android:text="English"
+        android:textColor="#FD8A8A"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <Button
+        android:id="@+id/button_korean"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#AEE2FF"
+        android:text="Korean"
+        android:textColor="#F3AA51"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_english" />
+
+    <Button
+        android:id="@+id/button_japanese"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Japanese"
+        android:textSize="20dp"
+        android:textColor="#F1F7B5"
+        android:backgroundTint="#93C6E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_korean" />
+
+    <Button
+        android:id="@+id/button_thai"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Thai"
+        android:textSize="20dp"
+        android:textColor="#a3cc54"
+        android:backgroundTint="#FEDEFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_japanese" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
