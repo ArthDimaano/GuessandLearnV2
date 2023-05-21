@@ -17,6 +17,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btn = (Button) findViewById(R.id.play);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDifficulties();
+            }
+        });
+    }
+
+    private void openDifficulties() {
+        Intent intent = new Intent(this, Difficulties.class);
+        startActivity(intent);
     }
 
 }
