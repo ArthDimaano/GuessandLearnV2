@@ -20,14 +20,14 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cathegories();
+                openDifficulties();
             }
         });
-
     }
 
-    protected void cathegories() {
-        Intent intent = new Intent(this, cathegories.class);
+    private void openDifficulties() {
+        Intent intent = new Intent(this, Difficulties.class);
         startActivity(intent);
     }
+
 }
