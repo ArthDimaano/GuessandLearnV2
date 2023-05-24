@@ -101,7 +101,7 @@ public class Easy extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (!answered) {
-                    if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked() || rb4.isChecked()) {
+                    if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked()) {
                         checkAnswer();
                     } else {
                         Toast.makeText(Easy.this, "Please select an answer", Toast.LENGTH_SHORT).show();
@@ -117,7 +117,6 @@ public class Easy extends AppCompatActivity {
         rb1.setTextColor(textColorDefaultRb);
         rb2.setTextColor(textColorDefaultRb);
         rb3.setTextColor(textColorDefaultRb);
-        rb4.setTextColor(textColorDefaultRb);
         rbGroup.clearCheck();
 
         if (questionCounter < questionCountTotal) {
@@ -127,7 +126,6 @@ public class Easy extends AppCompatActivity {
             rb1.setText(currentQuestion.getOption1());
             rb2.setText(currentQuestion.getOption2());
             rb3.setText(currentQuestion.getOption3());
-            rb4.setText(currentQuestion.getOption3());
 
             questionCounter++;
             textViewQuestionCount.setText("Question: " + questionCounter + "/" + questionCountTotal);
@@ -193,7 +191,6 @@ public class Easy extends AppCompatActivity {
         rb1.setTextColor(Color.RED);
         rb2.setTextColor(Color.RED);
         rb3.setTextColor(Color.RED);
-        rb4.setTextColor(Color.RED);
 
         switch (currentQuestion.getAnswerNr()) {
             case 1:
@@ -207,10 +204,6 @@ public class Easy extends AppCompatActivity {
             case 3:
                 rb3.setTextColor(Color.GREEN);
                 textViewQuestion.setText("Answer 3 is correct");
-                break;
-            case 4:
-                rb4.setTextColor(Color.GREEN);
-                textViewQuestion.setText("Answer 4 is correct");
                 break;
         }
 
