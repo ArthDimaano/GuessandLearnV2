@@ -19,7 +19,6 @@ public class Question implements Parcelable {
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
-        this.option4 = option4;
         this.answerNr = answerNr;
     }
 
@@ -28,7 +27,6 @@ public class Question implements Parcelable {
         option1 = in.readString();
         option2 = in.readString();
         option3 = in.readString();
-        option4 = in.readString();
         answerNr = in.readInt();
     }
 
@@ -38,7 +36,6 @@ public class Question implements Parcelable {
         dest.writeString(option1);
         dest.writeString(option2);
         dest.writeString(option3);
-        dest.writeString(option4);
         dest.writeInt(answerNr);
     }
 
@@ -89,13 +86,6 @@ public class Question implements Parcelable {
 
     public void setOption3(String option3) {
         this.option3 = option3;
-    }
-    public String getOption4() {
-        return option4;
-    }
-
-    public void setOption4(String option4) {
-        this.option3 = option4;
     }
 
     public int getAnswerNr() {

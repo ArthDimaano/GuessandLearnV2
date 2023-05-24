@@ -68,7 +68,6 @@ public class Easy extends AppCompatActivity {
         rb1 = findViewById(R.id.radio_button1);
         rb2 = findViewById(R.id.radio_button2);
         rb3 = findViewById(R.id.radio_button3);
-        rb4 = findViewById(R.id.radio_button4);
         buttonConfirmNext = findViewById(R.id.button_confirm_next);
 
         textColorDefaultRb = rb1.getTextColors();
@@ -210,7 +209,7 @@ public class Easy extends AppCompatActivity {
                 textViewQuestion.setText("Answer 3 is correct");
                 break;
             case 4:
-                rb3.setTextColor(Color.GREEN);
+                rb4.setTextColor(Color.GREEN);
                 textViewQuestion.setText("Answer 4 is correct");
                 break;
         }
