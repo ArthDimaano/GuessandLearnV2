@@ -36,7 +36,6 @@ public class Easy extends AppCompatActivity {
     private RadioButton rb1;
     private RadioButton rb2;
     private RadioButton rb3;
-    private RadioButton rb4;
     private Button buttonConfirmNext;
 
     private ColorStateList textColorDefaultRb;
