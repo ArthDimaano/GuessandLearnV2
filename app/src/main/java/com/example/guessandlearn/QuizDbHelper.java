@@ -1,5 +1,6 @@
 package com.example.guessandlearn;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -32,6 +33,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 QuestionsTable.COLUMN_OPTION1 + " TEXT, " +
                 QuestionsTable.COLUMN_OPTION2 + " TEXT, " +
                 QuestionsTable.COLUMN_OPTION3 + " TEXT, " +
+                QuestionsTable.COLUMN_OPTION4 + " TEXT, " +
                 QuestionsTable.COLUMN_ANSWER_NR + " INTEGER" +
                 ")";
 
@@ -46,15 +48,15 @@ public class QuizDbHelper extends SQLiteOpenHelper {
     }
 
     private void fillQuestionsTable() {
-        Question q1 = new Question("A is correct", "A", "B", "C", 1);
+        Question q1 = new Question("A is correct","A", "B", "C","D", 1);
         addQuestion(q1);
-        Question q2 = new Question("B is correct", "A", "B", "C", 2);
+        Question q2 = new Question("B is correct", "A", "B", "C","d", 2);
         addQuestion(q2);
-        Question q3 = new Question("C is correct", "A", "B", "C", 3);
+        Question q3 = new Question("C is correct", "A", "B", "C","d", 3);
         addQuestion(q3);
-        Question q4 = new Question("A is correct again", "A", "B", "C", 1);
+        Question q4 = new Question("A is correct again", "A", "B", "C","d", 1);
         addQuestion(q4);
-        Question q5 = new Question("B is correct again", "A", "B", "C", 2);
+        Question q5 = new Question("B is correct again", "A", "B", "C","d", 2);
         addQuestion(q5);
     }
 
@@ -64,10 +66,12 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         cv.put(QuestionsTable.COLUMN_OPTION1, question.getOption1());
         cv.put(QuestionsTable.COLUMN_OPTION2, question.getOption2());
         cv.put(QuestionsTable.COLUMN_OPTION3, question.getOption3());
+        cv.put(QuestionsTable.COLUMN_OPTION4, question.getOption4());
         cv.put(QuestionsTable.COLUMN_ANSWER_NR, question.getAnswerNr());
         db.insert(QuestionsTable.TABLE_NAME, null, cv);
     }
 
+    @SuppressLint("Range")
     public ArrayList<Question> getAllQuestions() {
         ArrayList<Question> questionList = new ArrayList<>();
         db = getReadableDatabase();
@@ -75,11 +79,12 @@ public class QuizDbHelper extends SQLiteOpenHelper {
 
         if (c.moveToFirst()) {
             do {
-                Question question = new Question();
+                Question question = new Question("A is correct", "A", "B", "C", "D", 1);
                 question.setQuestion(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_QUESTION)));
                 question.setOption1(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION1)));
                 question.setOption2(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION2)));
                 question.setOption3(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION3)));
+                question.setOption4(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION4)));
                 question.setAnswerNr(c.getInt(c.getColumnIndex(QuestionsTable.COLUMN_ANSWER_NR)));
                 questionList.add(question);
             } while (c.moveToNext());
