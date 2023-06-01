@@ -8,11 +8,8 @@ public class Question implements Parcelable {
     private String option1;
     private String option2;
     private String option3;
-    private String option4;
     private int answerNr;
 
-    public Question(String a_is_correct, String a, String b, String c, String d, int i) {
-    }
 
     public Question(String question, String option1, String option2, String option3, int answerNr) {
         this.question = question;

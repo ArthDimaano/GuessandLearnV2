@@ -5,7 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Difficulties">
+    tools:context=".Difficulties"
+    android:background="@drawable/bg2">
 
     <TextView
         android:id="@+id/textView"
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="16dp"
         android:text="Difficulties"
         android:textColor="@color/black"
         android:textSize="50dp"
@@ -27,7 +28,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="370dp"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="277dp"
+        android:layout_marginEnd="2dp"
         android:gravity="center"
         android:orientation="vertical">
 

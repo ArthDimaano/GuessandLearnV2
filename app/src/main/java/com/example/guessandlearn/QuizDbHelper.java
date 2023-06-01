@@ -77,7 +77,7 @@ public class QuizDbHelper extends SQLiteOpenHelper {
 
         if (c.moveToFirst()) {
             do {
-                Question question = new Question("A is correct", "A", "B", "C", "D", 1);
+                Question question = new Question("A is correct", "A", "B", "C", 1);
                 question.setQuestion(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_QUESTION)));
                 question.setOption1(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION1)));
                 question.setOption2(c.getString(c.getColumnIndex(QuestionsTable.COLUMN_OPTION2)));
