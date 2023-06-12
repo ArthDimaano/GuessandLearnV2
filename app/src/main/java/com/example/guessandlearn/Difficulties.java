@@ -37,7 +37,19 @@ public class Difficulties extends AppCompatActivity {
                 openHard();
             }
         });
+        Button pro = (Button) findViewById(R.id.pronunciation);
+        pro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPro();
+            }
+        });
 
+    }
+
+    private void openPro() {
+        Intent intent = new Intent(this, pronouns.class);
+        startActivity(intent);
     }
 
     private void openHard() {
