@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Guess and Learn</string>
+    <string name="press_back_again">Press back again to exit</string>
+    <string name="finish">Finish</string>
+    <string name="answer_1_correct">ANSWER 1 CORRECT</string>
+    <string name="answer_2_correct">ANSWER 2 CORRECT</string>
+    <string name="answer_3_correct">ANSWER 3 CORRECT</string>
+    <string name="please_select_answer">PLEASE SELECT AN ANSWER</string>
+    <string name="question_count"></string>
+    <string name="score_label">Score:</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="score">SCORE</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
