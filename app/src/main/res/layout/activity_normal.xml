@@ -4,73 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/teal_200"
+    android:background="@drawable/bg3"
     android:padding="24dp"
-    tools:context=".Easy">
+    tools:context=".normal">
+
 
     <TextView
+        android:id="@+id/total_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/total_question"
-        android:text="Total Questions"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="20dp"/>
-
+        android:layout_marginTop="26dp"
+        android:text="Total Questions"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
 
     <TextView
+        android:id="@+id/question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/question"
-        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp"
+        android:layout_marginBottom="20dp"
         android:text="This will be the question"
-        android:textColor="@color/white"
-        android:textSize="24dp"
         android:textAlignment="center"
-        android:layout_margin="20dp"
-        android:layout_above="@id/choices_layout"/>
-
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
 
     <LinearLayout
+        android:id="@+id/choices_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/choices_layout"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="350dp"
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/ans_A"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ans_A"
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
             android:text="Ans A"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <Button
+            android:id="@+id/ans_B"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ans_B"
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
             android:text="Ans B"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
         <Button
+            android:id="@+id/ans_C"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ans_C"
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
             android:text="Ans C"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
+
         <Button
+            android:id="@+id/ans_D"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/ans_D"
             android:layout_margin="5dp"
             android:backgroundTint="@color/white"
             android:text="Ans D"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
 
     </LinearLayout>
 
