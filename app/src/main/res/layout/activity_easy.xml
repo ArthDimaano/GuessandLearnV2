@@ -4,83 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:background="@color/teal_200"
+    android:padding="24dp"
     tools:context=".Easy">
 
     <TextView
-        android:id="@+id/text_view_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Score: 0"
-        android:textColor="@android:color/black"
-        android:freezesText="true"/>
+        android:id="@+id/total_question"
+        android:text="Total Questions"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+
 
     <TextView
-        android:id="@+id/text_view_question_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_score"
-        android:text="Question: 1/x"
-        android:textColor="@android:color/black"
-        android:freezesText="true"/>
-
-    <TextView
-        android:id="@+id/text_view_countdown"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:text="00:30"
-        android:textColor="@android:color/black"
-        android:textSize="40sp"
-        android:freezesText="true"/>
-
-    <TextView
-        android:id="@+id/text_view_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/radio_group"
-        android:layout_marginBottom="16dp"
-        android:text="Here will be the question text\nHere will be the question text\nHere will be the question text"
+        android:id="@+id/question"
+        android:textStyle="bold"
+        android:text="This will be the question"
+        android:textColor="@color/white"
+        android:textSize="24dp"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:freezesText="true"/>
+        android:layout_margin="20dp"
+        android:layout_above="@id/choices_layout"/>
 
-    <RadioGroup
-        android:id="@+id/radio_group"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true">
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/radio_button1"
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Option 1"
-            android:freezesText="true"/>
+            android:id="@+id/ans_A"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans A"
+            android:textColor="@color/black"/>
 
-        <RadioButton
-            android:id="@+id/radio_button2"
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Option 2"
-            android:freezesText="true"/>
+            android:id="@+id/ans_B"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans B"
+            android:textColor="@color/black"/>
 
-        <RadioButton
-            android:id="@+id/radio_button3"
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Option 3"
-            android:freezesText="true"/>
+            android:id="@+id/ans_C"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans C"
+            android:textColor="@color/black"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ans_D"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Ans D"
+            android:textColor="@color/black"/>
 
-    </RadioGroup>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/button_confirm_next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/radio_group"
-        android:layout_marginTop="16dp"
-        android:text="Confirm"
-        android:freezesText="true"/>
+        android:id="@+id/submit_btn"
+        android:text="Submit"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="40dp"/>
+
+
+
 </RelativeLayout>

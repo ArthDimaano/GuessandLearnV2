@@ -9,14 +9,12 @@ import android.widget.Button;
 
 public class Difficulties extends AppCompatActivity {
 
-    private Button easy, normal, hard;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_difficulties);
 
-        easy = (Button) findViewById(R.id.easy);
+        Button easy = (Button) findViewById(R.id.easy);
         easy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,7 +22,7 @@ public class Difficulties extends AppCompatActivity {
             }
         });
 
-        normal = (Button) findViewById(R.id.normal);
+        Button normal = (Button) findViewById(R.id.normal);
         normal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,7 +30,7 @@ public class Difficulties extends AppCompatActivity {
             }
         });
 
-        hard = (Button) findViewById(R.id.hard);
+        Button hard = (Button) findViewById(R.id.hard);
         hard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +46,7 @@ public class Difficulties extends AppCompatActivity {
     }
 
     private void openNormal() {
-        Intent intent = new Intent(this, normal.class);
+        Intent intent = new Intent(this, Normal.class);
         startActivity(intent);
     }
 
