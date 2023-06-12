@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg3"
     android:padding="24dp"
-    tools:context=".Easy">
+    tools:context=".hard">
 
 
     <TextView
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="149dp"
+        android:layout_marginTop="120dp"
         android:layout_marginBottom="20dp"
         android:text="This will be the question"
         android:textAlignment="center"
@@ -38,7 +38,7 @@
         android:id="@+id/choices_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="315dp"
         android:orientation="vertical">
 
         <Button
@@ -85,7 +85,7 @@
         android:id="@+id/submit_btn"
         android:text="Submit"
         android:layout_below="@id/choices_layout"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="5dp"/>
 
 
 
