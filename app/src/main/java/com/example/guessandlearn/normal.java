@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class normal extends AppCompatActivity implements View.OnClickListener{
+public class Normal extends AppCompatActivity implements View.OnClickListener{
 
     TextView totalQuestionsTextView;
     TextView questionTextView;
