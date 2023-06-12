@@ -18,7 +18,7 @@ public class hard extends AppCompatActivity implements View.OnClickListener{
     Button submitBtn;
 
     int score=0;
-    int totalQuestion = QuestionAnswer.question.length;
+    int totalQuestion = QuestionAnswer3.question.length;
     int currentQuestionIndex = 0;
     String selectedAnswer = "";
 
@@ -57,7 +57,7 @@ public class hard extends AppCompatActivity implements View.OnClickListener{
 
         Button clickedButton = (Button) view;
         if(clickedButton.getId()==R.id.submit_btn){
-            if(selectedAnswer.equals(QuestionAnswer.correctAnswers[currentQuestionIndex])){
+            if(selectedAnswer.equals(QuestionAnswer3.correctAnswers[currentQuestionIndex])){
                 score++;
             }
             currentQuestionIndex++;
@@ -80,11 +80,11 @@ public class hard extends AppCompatActivity implements View.OnClickListener{
             return;
         }
 
-        questionTextView.setText(QuestionAnswer.question[currentQuestionIndex]);
-        ansA.setText(QuestionAnswer.choices[currentQuestionIndex][0]);
-        ansB.setText(QuestionAnswer.choices[currentQuestionIndex][1]);
-        ansC.setText(QuestionAnswer.choices[currentQuestionIndex][2]);
-        ansD.setText(QuestionAnswer.choices[currentQuestionIndex][3]);
+        questionTextView.setText(QuestionAnswer3.question[currentQuestionIndex]);
+        ansA.setText(QuestionAnswer3.choices[currentQuestionIndex][0]);
+        ansB.setText(QuestionAnswer3.choices[currentQuestionIndex][1]);
+        ansC.setText(QuestionAnswer3.choices[currentQuestionIndex][2]);
+        ansD.setText(QuestionAnswer3.choices[currentQuestionIndex][3]);
 
     }
 
