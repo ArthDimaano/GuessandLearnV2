@@ -15,18 +15,42 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:background="">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MotherBoard"
                 android:textColor="@color/black"
-                android:textSize="45dp"/>
+                android:textSize="45dp"
+                android:layout_marginLeft="50dp"/>
+
+            <ImageButton
+                android:id="@+id/mobo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/pngegg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:background="">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MotherBoard"
+                android:textColor="@color/black"
+                android:textSize="45dp"
+                android:layout_marginLeft="50dp"/>
 
             <ImageButton
                 android:layout_width="64dp"
                 android:layout_height="64dp"
-                android:background="@drawable/img_1"/>
+                android:background="@drawable/pngegg"/>
         </LinearLayout>
 
     </LinearLayout>
