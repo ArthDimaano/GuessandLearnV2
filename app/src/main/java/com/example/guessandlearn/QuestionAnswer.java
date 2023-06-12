@@ -9,7 +9,6 @@ public class QuestionAnswer {
             "MOUSE - Is A Small, Movable Device That Lets You Control A Range Of Things On A Computer.",
             "BLOCK – A Set Of Statements Enclosed In Set Braces { }.",
             "VARIABLE - A Value That Can Change, Depending On Conditions Or On Information Passed To The Program.",
-            "Variable - A Value That Can Change, Depending On Conditions Or On Information Passed To The Program.",
             "BYTE – A Unit That Most Computers Use To Represent A Character Such As A Letter, Number Or Typographic Symbol.",
             "INDEXERS - Allow Instances Of A Class Or Struct To Be Indexed Just Like Arrays.",
             "THROWS - Used To Declare Exceptions That Can Occur During The Execution Of A Program.",
