@@ -46,7 +46,7 @@ public class Difficulties extends AppCompatActivity {
     }
 
     private void openNormal() {
-        Intent intent = new Intent(this, Normal.class);
+        Intent intent = new Intent(this, normal.class);
         startActivity(intent);
     }
 
