@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".pronouns"
-    android:background="@drawable/bg2">
+    android:background="@drawable/bg4">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,17 +16,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="150dp">
+            android:layout_marginTop="10dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MotherBoard"
-                android:textColor="@color/black"
+                android:text="JAVA"
+                android:textColor="@color/white"
                 android:textSize="45dp"
-                android:layout_marginLeft="50dp"/>
+                android:layout_marginLeft="135dp"
+                />
 
             <ImageButton
-                android:id="@+id/mobo"
+                android:id="@+id/java"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/pngegg"/>
@@ -40,12 +41,93 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MotherBoard"
-                android:textColor="@color/black"
+                android:text="PRINTER"
+                android:textColor="@color/white"
                 android:textSize="45dp"
-                android:layout_marginLeft="50dp"/>
+                android:layout_marginLeft="105dp"/>
 
             <ImageButton
+                android:id="@+id/printer"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/pngegg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIRUS"
+                android:textColor="@color/white"
+                android:textSize="45dp"
+                android:layout_marginLeft="125dp"/>
+
+            <ImageButton
+                android:id="@+id/virus"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/pngegg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOUSE"
+                android:textColor="@color/white"
+                android:textSize="45dp"
+                android:layout_marginLeft="115dp"/>
+
+            <ImageButton
+                android:id="@+id/mouse"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/pngegg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BLOCK"
+                android:textColor="@color/white"
+                android:textSize="45dp"
+                android:layout_marginLeft="115dp"/>
+
+            <ImageButton
+                android:id="@+id/block"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/pngegg"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VARIABLE"
+                android:textColor="@color/white"
+                android:textSize="45dp"
+                android:layout_marginLeft="95dp"/>
+
+            <ImageButton
+                android:id="@+id/variable"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:background="@drawable/pngegg"/>
